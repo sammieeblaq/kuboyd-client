@@ -143,15 +143,15 @@ ol {
   font-family: "Futura", sans-serif;
   min-width: 150px;
   text-align: center;
-  border: 2px solid #7ad4cc;
+  /* border: 2px solid #7ad4cc; */
   cursor: pointer;
-  color: #fff;
+  color: #000;
   background-color: #7ad4cc;
 }
 
 .site-btn:hover {
-  background-color: #7ad4cc;
-  /* color: black; */
+  background-color: rgb(49, 48, 48);
+  color: #fff;
 }
 
 .site-btn.no-radius {
@@ -1839,3 +1839,5 @@ ol {
     padding-left: 0;
   }
 }
+
+/*  The Form Secion */

@@ -6,15 +6,10 @@ class LandingPage extends Component {
   render() {
     return (
       <>
-        {/* <!-- Page Preloder --> */}
-        {/* <div id="preloder">
-          <div className="loader"></div>
-        </div> */}
-        {/* <!-- Header section --> */}
         <header className="header-section clearfix">
           <div className="container-fluid">
             <a href="index.html" className="site-logo">
-              <span className="sb-gradients">
+              <span>
                 <b>KUBOYD</b>
               </span>
               {/* <img src={Logo} alt="" /> */}
@@ -25,32 +20,11 @@ class LandingPage extends Component {
             <a href="/" className="user">
               <i className="fa fa-user"></i>
             </a>
-            <a href="/" className="site-btn sb-gradients">
+            <a href="/" className="site-btn">
               Sign Up
             </a>
-            {/* <nav className="main-menu">
-              <ul className="menu-list">
-                <li>
-                  <a href="/">Solution</a>
-                </li>
-                <li>
-                  <a href="/">Features</a>
-                </li>
-                <li>
-                  <a href="/">News</a>
-                </li>
-                <li>
-                  <a href="/">About</a>
-                </li>
-                <li>
-                  <a href="/">Contact</a>
-                </li>
-              </ul>
-            </nav> */}
           </div>
         </header>
-        {/* <!-- Header section end --> */}
-        {/* <!-- Hero section --> */}
         <section className="hero-section">
           <div className="container">
             <div className="row">
@@ -62,7 +36,7 @@ class LandingPage extends Component {
                 <h4>Use Kuboyd to manage your finances with confidence</h4>
                 <form className="hero-subscribe-from">
                   <input type="text" placeholder="Enter your email" />
-                  <button className="site-btn sb-gradients">Get Started</button>
+                  <button className="site-btn">Get Started</button>
                 </form>
               </div>
               <div className="col-md-6">
@@ -71,8 +45,6 @@ class LandingPage extends Component {
             </div>
           </div>
         </section>
-        {/* <!-- Hero section end --> */}
-        {/* <!-- About section --> */}
         <section className="about-section spad">
           <div className="container">
             <div className="row">
@@ -97,8 +69,6 @@ class LandingPage extends Component {
             </div>
           </div>
         </section>
-        {/* <!-- About section end --> */}
-        {/* <!-- Features section --> */}
         <section className="features-section spad">
           <div className="container text-black">
             <div className="section-title text-center">
