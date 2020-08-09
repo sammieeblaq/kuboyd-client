@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Laptop from "../assets/img/wallet.png";
+import { Link } from "react-router-dom";
 import about from "../assets/img/about-img.png";
 
 class LandingPage extends Component {
@@ -20,9 +20,9 @@ class LandingPage extends Component {
             <a href="/" className="user">
               <i className="fa fa-user"></i>
             </a>
-            <a href="/" className="site-btn">
-              Sign Up
-            </a>
+            <Link to="/login" className="site-btn">
+              Login
+            </Link>
           </div>
         </header>
         <section className="hero-section">
@@ -39,8 +39,65 @@ class LandingPage extends Component {
                   <button className="site-btn">Get Started</button>
                 </form>
               </div>
-              <div className="col-md-6">
-                <img src={Laptop} className="laptop-image" alt="" />
+              <div className="col-sm-6">
+                {/* <img src={Laptop} className="laptop-image" alt="" /> */}
+                <form className="laptop-image validate-form" method="POST">
+                  <span className="login100-form-title">New Account</span>
+                  <div
+                    className="wrap-input100 validate-input"
+                    data-validate="Valid email is required: ex@abc.xyz"
+                  >
+                    <input
+                      className="input100"
+                      type="phone"
+                      name="phone"
+                      placeholder="Phone"
+                    />
+                    <span className="focus-input100"></span>
+                    <span className="symbol-input100">
+                      <i className="fa fa-phone" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div
+                    className="wrap-input100 validate-input"
+                    data-validate="Valid email is required: ex@abc.xyz"
+                  >
+                    <input
+                      className="input100"
+                      type="text"
+                      name="email"
+                      placeholder="Email"
+                    />
+                    <span className="focus-input100"></span>
+                    <span className="symbol-input100">
+                      <i className="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div
+                    className="wrap-input100 validate-input"
+                    data-validate="Password is required"
+                  >
+                    <input
+                      className="input100"
+                      type="password"
+                      name="pass"
+                      placeholder="Password"
+                    />
+                    <span className="focus-input100"></span>
+                    <span className="symbol-input100">
+                      <i className="fa fa-lock" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div className="container-login100-form-btn">
+                    <button className="login100-form-btn">SIGN UP</button>
+                  </div>
+                  <div className="text-center p-t-12">
+                    {/* <span className="txt1">Forgot</span>
+                    <a className="txt2" href="/">
+                      Username / Password?
+                    </a> */}
+                  </div>
+                </form>
               </div>
             </div>
           </div>
